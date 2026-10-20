@@ -1,5 +1,13 @@
 # @e2e-dev/mobile
 
+## 0.12.4
+
+### Patch Changes
+
+- [#1274](https://github.com/tester-army/e2e/pull/1274) [`2a07390`](https://github.com/tester-army/e2e/commit/2a07390dc47c3f6d27069d1da411d14ea7d693e5) Thanks [@kacperkapusciak](https://github.com/kacperkapusciak)! - Read an empty iOS text field as empty. XCTest reports an empty field's placeholder as its value, so the agent and `toHaveValue` saw the placeholder text as typed text, and an agent asked to submit an empty form spent its turns trying to delete it.
+
+- [#1209](https://github.com/tester-army/e2e/pull/1209) [`ef977f4`](https://github.com/tester-army/e2e/commit/ef977f4856da009cac26d78d2e9bb14e5991ee41) Thanks [@knowbody](https://github.com/knowbody)! - Keep healthy agent-device sessions open on leased devices across worker replacement, so later tests no longer fail with "Device is already in use". The engine also retries a failed provider recording stop before the worker's next attempt.
+
 ## 0.12.3
 
 ### Patch Changes
